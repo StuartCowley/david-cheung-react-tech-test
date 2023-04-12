@@ -1,12 +1,17 @@
 import React, { useState } from "react";
+import getImages from "../requests/getImages.js";
 import "../styles/search.css";
 
-const Search = () => {
+const Search = ({ setFetchData }) => {
   const [value, setValue] = useState();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
+    console.log("process handle Submit");
     event.preventDefault();
-    console.log("handle submit");
+
+    const results = await getImages(value);
+    console.log("results=", results);
+    setFetchData(results);
   };
 
   return (
