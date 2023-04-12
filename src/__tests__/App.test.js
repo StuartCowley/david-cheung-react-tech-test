@@ -9,9 +9,9 @@ describe("App", () => {
     expect(rendered).toMatchSnapshot();
   });
 
-  test("renders learn react link", () => {
+  test("Assert nasa-logo is present", () => {
     render(<App />);
 
-    expect(screen.getByText(/React Tech Test/i)).toBeInTheDocument();
+    expect(screen.getByRole("img")).toHaveClass("nasa-logo");
   });
 });
