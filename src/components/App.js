@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Search from "./Search";
 import "../styles/app.css";
+import { arrayOf } from "prop-types";
 
 const App = () => {
   const [fetchData, setFetchData] = useState();
-
-  console.log("fetchData=", fetchData);
 
   return (
     <div className="app">
@@ -15,6 +14,13 @@ const App = () => {
         alt="nasaLogo"
       />
       <Search setFetchData={setFetchData} />
+      <div className="fetchData">
+        {fetchData &&
+          fetchData.length > 0 &&
+          fetchData.map((item, index) => (
+            <img key={index} src={item.href} alt="alt" />
+          ))}
+      </div>
     </div>
   );
 };

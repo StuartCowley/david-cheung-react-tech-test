@@ -29,5 +29,8 @@ exports[`App Renders as expected 1`] = `
       </button>
     </form>
   </div>
+  <div
+    className="fetchData"
+  />
 </div>
 `;
