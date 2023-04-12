@@ -30,7 +30,7 @@ exports[`App Renders as expected 1`] = `
     </form>
   </div>
   <div
-    className="fetchData"
+    className="search-results"
   />
 </div>
 `;

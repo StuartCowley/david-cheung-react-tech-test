@@ -6,11 +6,10 @@ const Search = ({ setFetchData }) => {
   const [value, setValue] = useState();
 
   const handleSubmit = async (event) => {
-    console.log("process handle Submit");
     event.preventDefault();
 
     const results = await getImages(value);
-    console.log("results=", results);
+
     setFetchData(results);
   };
 

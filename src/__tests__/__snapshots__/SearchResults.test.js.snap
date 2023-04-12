@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResults Renders as expected 1`] = `
+<div
+  className="search-results"
+>
+  <img
+    alt="image-title1"
+    src="image-href1"
+    title="image-title1"
+  />
+  <img
+    alt="image-title2"
+    src="image-href2"
+    title="image-title2"
+  />
+  <img
+    alt="image-title3"
+    src="image-href3"
+    title="image-title3"
+  />
+</div>
+`;

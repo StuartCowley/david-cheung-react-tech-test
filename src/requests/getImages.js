@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const getImages = (query) => {
-  console.log("process getImages, query=", query);
   if (!query) {
     return Promise.resolve([]);
   } else {
