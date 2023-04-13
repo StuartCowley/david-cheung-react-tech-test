@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import getImages from "../requests/getImages.js";
 import "../styles/search.css";
 
-const Search = ({ setFetchData, setErrorMessage }) => {
+const Search = ({ setFetchData, setErrorMessage, setSlideOn }) => {
   const [value, setValue] = useState();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    setSlideOn(false);
 
     const results = await getImages(value);
     if (results.length === 0) {

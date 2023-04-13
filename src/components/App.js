@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import SearchResults from "./SearchResults";
 import Popup from "./Popup";
+import Slideshow from "./Slideshow";
 import "../styles/app.css";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
   const [errorMessage, setErrorMessage] = useState();
   const [buttonPopup, setButtonPopup] = useState(false);
   const [src, setSrc] = useState({ href: "", title: "" });
+  const [slideOn, setSlideOn] = useState(false);
 
   const handleClick = (event) => {
     setSrc({ href: event.target.src, title: event.target.title });
@@ -26,24 +28,37 @@ const App = () => {
         image.removeEventListener("click", handleClick);
       });
     };
-  }, [fetchData]);
+  }, [fetchData, slideOn]);
 
   return (
     <div className="app">
+      {fetchData && fetchData.length > 0 && (
+        <button
+          className="slide-on-mode"
+          type="button"
+          onClick={() => {
+            setSlideOn(!slideOn);
+          }}
+        >
+          {slideOn ? "Slide Off" : "Slide On"}
+        </button>
+      )}
       <img
         className="nasa-logo"
         src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
         alt="nasaLogo"
       />
-      <Search setFetchData={setFetchData} setErrorMessage={setErrorMessage} />
-      {errorMessage ? (
-        <div>{errorMessage}</div>
-      ) : (
-        <SearchResults fetchData={fetchData} />
-      )}
+      <Search
+        setFetchData={setFetchData}
+        setErrorMessage={setErrorMessage}
+        setSlideOn={setSlideOn}
+      />
+      {errorMessage && <div>{errorMessage}</div>}
+      {!errorMessage && !slideOn && <SearchResults fetchData={fetchData} />}
       {src && buttonPopup && (
         <Popup setButtonPopup={setButtonPopup} src={src}></Popup>
       )}
+      {slideOn && <Slideshow fetchData={fetchData} />}
     </div>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import renderer from "react-test-renderer";
 import Search from "../components/Search";
-import { fn } from "sequelize";
 
 describe("Search", () => {
   const validProps = {
