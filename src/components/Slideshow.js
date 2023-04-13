@@ -1,13 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "../styles/slideshow.css";
 
 const spanStyle = {
   padding: "10px",
-  // background: "#efefef",
   background: "rgba(0,0,0,0.2)",
-  // color: "#000000",
   color: "white",
   position: "absolute",
   bottom: "8px",
@@ -51,3 +50,12 @@ const Slideshow = ({ fetchData }) => {
 };
 
 export default Slideshow;
+
+Slideshow.propTypes = {
+  fetchData: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string,
+      title: PropTypes.string,
+    })
+  ),
+};

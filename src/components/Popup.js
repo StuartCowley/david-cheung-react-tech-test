@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../styles/popup.css";
 
 const Popup = ({ setButtonPopup, src }) => {
@@ -21,3 +22,11 @@ const Popup = ({ setButtonPopup, src }) => {
 };
 
 export default Popup;
+
+Popup.propTypes = {
+  setButtonPopup: PropTypes.func.isRequired,
+  src: PropTypes.shape({
+    href: PropTypes.string,
+    title: PropTypes.string,
+  }).isRequired,
+};

@@ -34,6 +34,21 @@ const App = () => {
     <div className="app">
       {fetchData && fetchData.length > 0 && (
         <button
+          className="clear-mode"
+          type="button"
+          onClick={() => {
+            setFetchData([]);
+            setButtonPopup(false);
+            setSrc({ href: "", title: "" });
+            setSlideOn(false);
+          }}
+        >
+          Clear all
+        </button>
+      )}
+
+      {fetchData && fetchData.length > 0 && (
+        <button
           className="slide-on-mode"
           type="button"
           onClick={() => {

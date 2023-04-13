@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import getImages from "../requests/getImages.js";
+import PropTypes from "prop-types";
 import "../styles/search.css";
 
 const Search = ({ setFetchData, setErrorMessage, setSlideOn }) => {
@@ -36,3 +37,9 @@ const Search = ({ setFetchData, setErrorMessage, setSlideOn }) => {
 };
 
 export default Search;
+
+Search.propTypes = {
+  setFetchData: PropTypes.func.isRequired,
+  setErrorMessage: PropTypes.func.isRequired,
+  setSlideOn: PropTypes.func.isRequired,
+};
