@@ -6,16 +6,19 @@ exports[`SearchResults Renders as expected 1`] = `
 >
   <img
     alt="image-title1"
+    className="image"
     src="image-href1"
     title="image-title1"
   />
   <img
     alt="image-title2"
+    className="image"
     src="image-href2"
     title="image-title2"
   />
   <img
     alt="image-title3"
+    className="image"
     src="image-href3"
     title="image-title3"
   />

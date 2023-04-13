@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
   background-color: darkslategrey;
   padding: 20px;
   min-height: 500px;
+  background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/52688121607_bcce2a690e_o.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nasa-logo {
@@ -13,13 +17,3 @@
   padding: 10px;
   background-color: rgba(0, 0, 0, 0);
 }
-
-/* .fetchData {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.fetchData img {
-  height: 150px;
-  padding: 5px;
-} */

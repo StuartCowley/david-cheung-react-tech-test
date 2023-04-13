@@ -9,6 +9,7 @@ const SearchResults = ({ fetchData }) => {
         fetchData.map((item, index) => (
           <img
             key={index}
+            className="image"
             src={item.href}
             alt={item.title}
             title={item.title}

@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import getImages from "../requests/getImages.js";
 import "../styles/search.css";
 
-const Search = ({ setFetchData }) => {
+const Search = ({ setFetchData, setErrorMessage }) => {
   const [value, setValue] = useState();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     const results = await getImages(value);
-
+    if (results.length === 0) {
+      setErrorMessage("Image not found, please try again!");
+    } else {
+      setErrorMessage("");
+    }
     setFetchData(results);
   };
 

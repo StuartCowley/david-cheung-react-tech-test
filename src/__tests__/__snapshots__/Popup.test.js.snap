@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popup Renders as expected 1`] = `
+<div
+  className="popup"
+>
+  <div
+    className="popup-inner"
+  >
+    <button
+      className="close-btn"
+      onClick={[Function]}
+    >
+      X
+    </button>
+    <img
+      alt="test-title"
+      className="popup-href"
+      src="test-src"
+      width="100%"
+    />
+    <p
+      className="popup-title"
+    >
+      test-title
+    </p>
+  </div>
+</div>
+`;
