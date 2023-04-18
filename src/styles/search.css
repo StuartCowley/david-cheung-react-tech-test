@@ -1,0 +1,20 @@
+.search {
+  color: black;
+}
+
+.search-form {
+  color: black;
+  text-align: center;
+}
+
+.search-input {
+  color: black;
+}
+.search-button {
+  color: black;
+}
+
+.search-button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}

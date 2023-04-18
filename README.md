@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Technical Test App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Brief
 
-## Available Scripts
+This application uses to search images for stars, planets or galaxy entered by a user. Then application need to fetch images from NASA external API.
 
-In the project directory, you can run:
+When image is found, application needs to show images. And user can click image which one like, an enlarged image will be shown.
 
-### `npm start`
+If no image is found, error message will be shown.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Besides, application needs to have a full test suite for each components including asynchronous components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots of app
 
-### `npm test`
+- screen to show all images
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <img src="images\screen-all-image.jpeg" height="200">
 
-### `npm run build`
+- screen clicking one image
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <img src="images\screen-one-image.jpeg" height="200">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- screen in slide show
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <img src="images\screen-slideshow.jpeg" height="200">
 
-### `npm run eject`
+## Testing utilities used (Jest, React Testing Library)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Utilities | From                     | Usage                                                          |
+| --------- | ------------------------ | -------------------------------------------------------------- |
+| renderer  | "react-test-renderer"    | to generate component snapshots to catch unanticipated changes |
+| render    | "@testing-library/react" | to create the virtual test environment                         |
+| fireEvent | "@testing-library/react" | to simulate event trigger on component                         |
+| waitFor   | "@testing-library/react" | await for a group of actions                                   |
+| spyOn     | "jest"                   | to mock response from axios API calls                          |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [React](https://react.dev/learn): create a React app project template
+- [Axios API](https://axios-http.com/docs/intro): promise-based HTTP Client for node.js and the browser
+- [Prop types](https://www.npmjs.com/package/prop-types): runtime type checking for React props and similar objects
+- [Popup image](https://codepen.io/Muhnad/pen/dMbXNb): show one image in pop-up window
+- [React Slideshow](https://www.npmjs.com/package/react-slideshow-image): slide show for fetched images
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Instructions
 
-## Learn More
+- Clone the repo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+git clone https://github.com/DavidCheungTW/react-tech-test.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Move into the directory and install:
 
-### Code Splitting
+```
+cd react-tech-test
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- To start and run on port 3000:
 
-### Analyzing the Bundle Size
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- To run the tests:
 
-### Making a Progressive Web App
+```
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Extra features
 
-### Advanced Configuration
+- show description when mouse put on that image
+- show one image and title in popup window feature
+- react slideshow feature
+- clear all data feature
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[David Cheung](https://www.linkedin.com/in/david-cheung-473597199/)

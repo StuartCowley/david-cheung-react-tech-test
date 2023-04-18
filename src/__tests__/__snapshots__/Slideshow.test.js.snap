@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slideshow Renders as expected 1`] = `
+<div
+  className="slide-container"
+>
+  <div
+    aria-roledescription="carousel"
+    dir="ltr"
+  >
+    <div
+      className="react-slideshow-container"
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseMove={[Function]}
+      onMouseOver={[Function]}
+      onMouseUp={[Function]}
+      onTouchCancel={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <button
+        aria-label="Previous Slide"
+        className="nav default-nav "
+        data-type="prev"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+          />
+        </svg>
+      </button>
+      <div
+        className="react-slideshow-wrapper slide "
+      >
+        <div
+          className="images-wrap"
+          style={
+            Object {
+              "transform": "translate(-0px)",
+            }
+          }
+        >
+          <div
+            aria-hidden="true"
+            aria-roledescription="slide"
+            data-index={-1}
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundImage": "url('image-href3')",
+                    "backgroundSize": "cover",
+                    "display": "flex",
+                    "height": "500px",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "rgba(0,0,0,0.2)",
+                      "bottom": "8px",
+                      "color": "white",
+                      "padding": "10px",
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  image-title3
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="false"
+            aria-roledescription="slide"
+            className="active"
+            data-index={0}
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundImage": "url('image-href1')",
+                    "backgroundSize": "cover",
+                    "display": "flex",
+                    "height": "500px",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "rgba(0,0,0,0.2)",
+                      "bottom": "8px",
+                      "color": "white",
+                      "padding": "10px",
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  image-title1
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            aria-roledescription="slide"
+            className=""
+            data-index={1}
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundImage": "url('image-href2')",
+                    "backgroundSize": "cover",
+                    "display": "flex",
+                    "height": "500px",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "rgba(0,0,0,0.2)",
+                      "bottom": "8px",
+                      "color": "white",
+                      "padding": "10px",
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  image-title2
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            aria-roledescription="slide"
+            className=""
+            data-index={2}
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundImage": "url('image-href3')",
+                    "backgroundSize": "cover",
+                    "display": "flex",
+                    "height": "500px",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "rgba(0,0,0,0.2)",
+                      "bottom": "8px",
+                      "color": "white",
+                      "padding": "10px",
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  image-title3
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            aria-roledescription="slide"
+            data-index={3}
+          >
+            <div>
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "backgroundImage": "url('image-href1')",
+                    "backgroundSize": "cover",
+                    "display": "flex",
+                    "height": "500px",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "rgba(0,0,0,0.2)",
+                      "bottom": "8px",
+                      "color": "white",
+                      "padding": "10px",
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  image-title1
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        aria-label="Next Slide"
+        className="nav default-nav "
+        data-type="next"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+        >
+          <path
+            d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

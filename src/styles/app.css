@@ -1,0 +1,44 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: darkslategrey;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/52688121607_bcce2a690e_o.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nasa-logo {
+  margin: 0;
+  width: 250px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.slide-on-mode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  background-color: rgba(208, 205, 241, 0.7);
+}
+
+.slide-on-mode:hover {
+  background-color: greenyellow;
+}
+
+.clear-mode {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  background-color: rgba(208, 205, 241, 0.7);
+}
+
+.clear-mode:hover {
+  background-color: greenyellow;
+}
